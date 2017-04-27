@@ -1,17 +1,17 @@
 @media screen and (min-width: 1100px){
 
-#controls{margin-left: 100px !important;}
-#controls .right{margin-right: 100px;}
+#controls{margin-left: 85px !important;}
+#controls .right{margin-right: 85px;}
 
 #content {margin-top: 0px;}
-#content-wrapper {padding-left: 100px !important;width: 100% !important;}
+#content-wrapper {padding-left: 85px !important;width: 100% !important;}
 #navigation{
     background-color: #ddd; /*comment this line for default color or set #0082c9 for nextcloud blue or #1d2d44 for owncloud blue*/
     visibility:visible;
     display: block !important;
     position:fixed !important;
     bottom:0px;
-    width: 100px !important;
+    width: 85px !important;
     top:45px;
     left:0px;
     max-height: 100% !important;
@@ -22,12 +22,25 @@
     border-radius: 0px;
 }
 
+#navigation a {
+    height: 50px !important;
+    padding: 0px 0 !important;
+}
+
 /*Hide DropDown Icon on Top of Menu*/
 #navigation:after {
   display:none;
 }
 
+#apps {max-height: calc(100vh - 45px);}
+
+.icon-loading-dark:after {
+  margin: -32px 0 0 -16px;
+}
+
 #navigation #apps ul{text-align: center;}
+
+#navigation #apps ul:first-child{padding-top: 10px !important;}
 
 /* may not be required
 app-navigation{width: 19.5% !important;}*/
